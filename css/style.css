@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "PTSans", "Cuprum", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 20px;
+    color: #000000;
+    
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 30px;
+}
