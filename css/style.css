@@ -89,7 +89,7 @@ header .main-header {
 }
 
 .slider {
-    float: left;
+    clear: both;
     margin-bottom: 55px;
 }
 
@@ -117,7 +117,7 @@ header .main-header {
 
 .product {
     width: 220px;
-    height: 318px;
+    min-height: 318px;
     margin-right: 20px;
 }
 
@@ -189,7 +189,7 @@ ul.delivery-menu {
 
 .company-technomart {
     float: left;
-    margin-bottom: ;
+   
 }
 
 .company-technomart p {
