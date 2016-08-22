@@ -37,7 +37,6 @@ a.checkout
     vertical-align: middle;
     min-height: 22px;
     margin-right: 20px;
-    margin-bottom: 48px;
 }
 
 .logo {
@@ -69,11 +68,10 @@ input[type="text"] {
 }
 
 .main-navigation {
-    float: left;
+    clear: both;
     width: 942px;
     min-height: 61px;
     margin: 0 auto;
-    text-align: center;
     margin-bottom: 64px;
     background-color: bisque;
 }
@@ -124,7 +122,7 @@ input[type="text"] {
 
 
 .popular-products {
-    min-height: 88px;
+    min-height: 89px;
     margin-bottom: 21px;
 }
 
@@ -193,6 +191,10 @@ ul.delivery-menu {
     margin-bottom: 73px;
 }
 
+.services-slide-outer {
+    float: right;
+}
+
 .services-slider {
     float: right;
 }
@@ -227,20 +229,6 @@ ul.delivery-menu {
     padding: 83px 106px;
 }
 
-.company-technomart {
-    float: left;
-    width: 561px;
-}
-
-.company-technomart p {
-    float: left;
-    width: 539px;
-}
-
-.companies {
-    margin-bottom: 40px;
-}
-
 .company-name {
     float: left;
     width: 561px;
@@ -256,11 +244,6 @@ ul.delivery-menu {
    
 }
 
-.company-technomart .companies {
-    float: left;
-    width: 220px;
-}
-
 .about-company {
     display: inline-block;
     width: 220px;
@@ -272,19 +255,16 @@ ul.delivery-menu {
    
 }
 
-.contacts h2 {
-    width: 300px;
-    float: right;
-}
-
-.contacts p {
-    width: 300px;
-    float: right;
-}
-
 .contacts img {
-    float: right;
     margin-bottom: 42px;
+}
+
+.top-footer-outer {
+    float: left;
+}
+
+.top-footer .menu-outer {
+    float: right;
 }
 
 .logo-footer {
@@ -315,7 +295,15 @@ footer .footer-copyright {
 
 footer .footer-social {
     float: left;
-    margin-left: 270px; 
+    margin-left: 220px; 
+}
+
+footer .footer-copyright {
+    float: left;
+}
+
+footer .copyright {
+    float: left;
 }
 
 .bottom-footer .footer-contacts {
