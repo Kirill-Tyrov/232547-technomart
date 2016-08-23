@@ -10,11 +10,26 @@ body {
 }
 
 h2 {
-    font-size: 36px;
+    font-size: 30px;
+    line-height: 36px; 
 }
 
 h3 {
-    font-size: 30px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+p {
+    font-size: 13px;
+    line-height: 24px;
+}
+
+li {
+     list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 .header-top {
@@ -68,7 +83,6 @@ input[type="text"] {
 }
 
 .main-navigation {
-    clear: both;
     width: 942px;
     min-height: 61px;
     margin: 0 auto;
@@ -156,15 +170,16 @@ input[type="text"] {
 .gallery-all-producer .producer {
     float: left;
     margin-right: 20px;
+    margin-bottom: 20px;
     width: 220px;
-    height: 147px;
+    height: 145px;
 }
 
-.gallery-all-producer .producer:nth-child(4) {
-    margin-right: 0;
+.gallery-all-producer .producer img {
+    padding: 48px 0;
 }
 
-.gallery-all-producer .producer:nth-child(8) {
+.gallery-all-producer .producer:nth-child(4n) {
     margin-right: 0;
 }
 
@@ -183,6 +198,16 @@ input[type="text"] {
     margin-bottom: 75px;
 }
 
+.services h2 {
+    font-size: 30px;
+    line-height: 24px;
+}
+
+.services p {
+    font-size: 13px;
+    line-height: 24px;
+}
+
 ul.delivery-menu {
     width: 240px;
 }
@@ -193,19 +218,41 @@ ul.delivery-menu {
 
 .services-slide-outer {
     float: right;
+    width: 640px;
+    min-height: 281px;
+}
+
+.services-slide-outer h2 {
+    font-size: 36px;
+    line-height: 24px;
+}
+
+.services-slide-outer p {
+    font-size: 13px;
+    line-height: 24px;
+    float: right;
+    width: 300px;
+}
+
+.services-slide-outer {
+    background: #FFFFFF url(../img/delivery-slide.png) no-repeat 170px 25px;
 }
 
 .services-slider {
     float: right;
 }
 
-.services-slide services-slide-1 {
-    float: right;
-}
 
 .services-menu {
     float: left;
-    padding-right: 60px;
+    width: 240px;
+    min-height: 184px;
+}
+
+.services-menu li {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 30px;
 }
 
 .services-slide-1 p {
@@ -234,6 +281,11 @@ ul.delivery-menu {
     width: 561px;
 }
 
+.company-name h2 {
+    font-size: 30px;
+    line-height: 36px;
+}
+
 .top-footer {
     margin-top: 85px;
 }
@@ -259,12 +311,16 @@ ul.delivery-menu {
     margin-bottom: 42px;
 }
 
+
+
 .top-footer-outer {
     float: left;
+    width: 380px;
 }
 
 .top-footer .menu-outer {
     float: right;
+    width: 560px;
 }
 
 .logo-footer {
@@ -277,40 +333,82 @@ footer .footer-contacts {
     float: left;
     margin-right: 20px;
 }
+ 
+footer .first-menu-bottom {
+   padding-left: 10px;
+}   
 
-footer .first-menu-bottom li  {
-    float: right;
-    padding-right: 60px;
+footer .first-menu-bottom li {
+    font-size: 18px;
+    line-height: 24px;
+    display: inline-block;
+    margin-right: 55px;
 }
 
+footer .first-menu-bottom li:last-of-type { 
+    margin-right: 0px;
+}
+
+footer .first-menu-bottom li a { 
+    text-decoration: none;
+}
 
 footer .second-menu-bottom li {
+    font-size: 18px;
+    line-height: 24px;
     display: inline-block;
-    padding-right: 60px;
+    margin-right: 55px;
+}
+
+footer .second-menu-bottom li:last-of-type {
+    margin-right: 0px;
+}
+
+footer .second-menu-bottom li a { 
+    text-decoration: none;
+}
+
+footer .second-menu-bottom {
+    padding-left: 25px;
 }
 
 footer .footer-copyright {
     width: 233px;
 }
 
+.bottom-footer {
+   padding-top: 40px;
+   min-height: 106px;
+   background-color: #293449;
+   color: #FFFFFF;
+}
+
 footer .footer-social {
     float: left;
-    margin-left: 220px; 
+    width: 134px;
+    margin-right: 100px;
+    
 }
 
 footer .footer-copyright {
+    font-size: 16px;
+    line-height: 18px;
     float: left;
+    width: 230px;
+    margin-right: 150px;
 }
 
-footer .copyright {
-    float: left;
-}
-
-.bottom-footer .footer-contacts {
+footer .copyright-academy {
+    font-size: 16px;
+    line-height: 18px;
+    width: 110px;
     float: right;
 }
 
-.bottom-footer .copyright p {
-    float: right;
+.bottom-footer .footer-contacts  {
+    font-size: 16px;
+    line-height: 18px;
+    float: left;
+    width: 140px;
 }
-    
+  
