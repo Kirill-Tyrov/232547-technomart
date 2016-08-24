@@ -14,6 +14,12 @@ h2 {
     line-height: 36px; 
 }
 
+form h2 {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 30px
+}
+
 h3 {
     font-size: 18px;
     line-height: 20px;
@@ -32,8 +38,13 @@ a {
     text-decoration: none;
 }
 
+hr {
+    width: 221px;
+}
+
 .header-top {
     min-height: 42px;
+    background-color: #293449; 
 }
 
 .container {
@@ -54,10 +65,25 @@ a.checkout
     margin-right: 20px;
 }
 
-.logo {
+.header-top .logo {
+    position: relative;
+    font-size: 24px;
+    line-height: 24px;
+    color: #ffffff;
+    background-color: #ee3643;
     width: 220px;
     margin-right: 20px;
+    padding: 12px 0;
     text-align: center;
+}
+
+.header-top .logo::after {
+    position: absolute;
+    content: "";
+    top: 48px;
+    left: 0;
+    width: 100%;
+    border-bottom: 5px solid #b52933;
 }
 
 input[type="text"] {
@@ -65,7 +91,11 @@ input[type="text"] {
 }
 
 .header-bottom p {
-    width: 240px;
+    font-size: 16px;
+    line-height: 23px;
+    font-style: italic;
+    color: #ee3643;
+    width: 198px;
     float: left;
     padding-left: 47px;
 }
@@ -75,7 +105,6 @@ input[type="text"] {
     float: left;
     padding-left: 20px;
     padding-right: 20px;
-    
 }
 
 .header-bottom .user-block {
@@ -93,6 +122,49 @@ input[type="text"] {
 .main-navigation li {
     display: inline-block;
     padding-right: 53px;
+}
+
+.breadcrumbs li {
+    font-size: 13px;
+    line-height: 18px;
+    color: #000000;
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.breadcrumbs li a {
+    color: #000000;
+}
+
+.main-content .filter {
+    float: left;
+    width: 220px;
+}
+
+form {
+    margin-right: 21px;
+}
+
+form input[type="text"] {
+    display: inline-block;
+    width: 95px;
+}
+
+form input[type="checkbox"] {
+    text-align: left;
+    display: inline-block;
+    width: 95px;
+}
+
+form input[type="radio"] {
+    text-align: left;
+    display: inline-block;
+    width: 95px;
+}
+
+label {
+    margin-left: -20px;
+    width: 120px;
 }
 
 .promo .slider2 {
@@ -134,7 +206,6 @@ input[type="text"] {
     margin-bottom: 20px;
 } 
 
-
 .popular-products {
     min-height: 89px;
     margin-bottom: 21px;
@@ -152,14 +223,86 @@ input[type="text"] {
     float: right;
 }
 
+ h1.perforator {
+    font-size: 30px;
+    line-height: 30px;
+    color: #32425c;
+    background-color: #f2f6f8;
+    padding-top: 32px;
+    padding-bottom: 35px;
+    padding-left: 30px;
+}
+
+.sorting {
+    float: right;
+    width: 700px;
+    min-height: 39px;
+    margin-bottom: 20px;
+}
+
+.sorting h3 {
+    float: left;
+    padding-right: 140px;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.sorting li a {
+    font-size: 13px;
+    line-height: 18px;
+    float: left;
+    text-decoration: underline;
+    margin-right: 70px;
+}
+
 .gallery-product .product {
     float: left;
+}
+
+.gallery-product-catalog {
+    width: 700px;
+    float: right;
+}
+
+.gallery-product-catalog .product {
+    width: 220px;
+    min-height: 318px;
+    margin-right: 20px;
+    float: left;
+}
+
+.gallery-product-catalog .product:nth-child(3n) {
+    margin-right: 0;
 }
 
 .product {
     width: 220px;
     min-height: 318px;
     margin-right: 20px;
+}
+
+.product h3, .product span {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px    
+}
+
+h2.product-line {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 30px
+}
+
+.product span {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px
+}
+
+.product del {
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: bold;
 }
 
 .gallery-product .item-last {
@@ -212,14 +355,21 @@ ul.delivery-menu {
     width: 240px;
 }
 
-.services-outer .services {
-    margin-bottom: 73px;
+.services-outer {
+    padding-top: 68px;
+    margin-top: 68px;
 }
 
+.services-outer h2 {
+    margin-top: 68px;
+}
+
+.services-outer {
+    background-color: #f2f6f8;
+}
 .services-slide-outer {
     float: right;
     width: 640px;
-    min-height: 281px;
 }
 
 .services-slide-outer h2 {
@@ -230,18 +380,17 @@ ul.delivery-menu {
 .services-slide-outer p {
     font-size: 13px;
     line-height: 24px;
-    float: right;
     width: 300px;
 }
 
-.services-slide-outer {
-    background: #FFFFFF url(../img/delivery-slide.png) no-repeat 170px 25px;
+.services-slide-outer .services-slide-1 {
+    background: url(../img/delivery-slide.png) no-repeat 170px 25px;
+    min-height: 281px;
 }
 
 .services-slider {
     float: right;
 }
-
 
 .services-menu {
     float: left;
@@ -276,6 +425,11 @@ ul.delivery-menu {
     padding: 83px 106px;
 }
 
+.company-info .companies {
+    font-size: 18px;
+    line-height: 20px;
+}
+
 .company-name {
     float: left;
     width: 561px;
@@ -286,6 +440,32 @@ ul.delivery-menu {
     line-height: 36px;
 }
 
+.paginator a {
+    display: inline-block;  
+    width: 38px;
+    height: 38px;
+}
+
+.paginator a:last-of-type {  
+    width: 138px;
+    height: 38px;
+}
+
+.description {
+    background-color: #f2f6f8;
+}
+
+.description h2 {
+    font-size: 30px;
+    line-height: 24px;
+    padding-top: 69px;
+    padding-bottom: 40px;
+}
+
+.description p {
+    padding-bottom: 74px;
+}
+
 .top-footer {
     margin-top: 85px;
 }
@@ -293,7 +473,6 @@ ul.delivery-menu {
 .company-technomart ul {
     float: left;
     width: 220px;
-   
 }
 
 .about-company {
@@ -304,14 +483,11 @@ ul.delivery-menu {
 .contacts  {
     width: 300px;
     float: right;
-   
 }
 
 .contacts img {
     margin-bottom: 42px;
 }
-
-
 
 .top-footer-outer {
     float: left;
@@ -330,7 +506,6 @@ ul.delivery-menu {
 }
 
 footer .footer-contacts {
-    float: left;
     margin-right: 20px;
 }
  
