@@ -10,9 +10,580 @@ body {
 }
 
 h2 {
-    font-size: 36px;
+    font-size: 30px;
+    line-height: 36px; 
+}
+
+form h2 {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 30px
 }
 
 h3 {
-    font-size: 30px;
+    font-size: 18px;
+    line-height: 20px;
 }
+
+p {
+    font-size: 13px;
+    line-height: 24px;
+}
+
+li {
+     list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    width: 221px;
+}
+
+.header-top {
+    min-height: 42px;
+    background-color: #293449; 
+}
+
+.container {
+    width: 942px;
+    margin:  0 auto;
+    padding: 0 10px;
+}
+
+.container .logo, 
+input[type="text"],
+a.bookmarks,
+a.bascket,
+a.checkout
+{
+    display: inline-block;
+    vertical-align: middle;
+    min-height: 22px;
+    margin-right: 20px;
+}
+
+.header-top .logo {
+    position: relative;
+    font-size: 24px;
+    line-height: 24px;
+    color: #ffffff;
+    background-color: #ee3643;
+    width: 220px;
+    margin-right: 20px;
+    padding: 12px 0;
+    text-align: center;
+}
+
+.header-top .logo::after {
+    position: absolute;
+    content: "";
+    top: 48px;
+    left: 0;
+    width: 100%;
+    border-bottom: 5px solid #b52933;
+}
+
+input[type="text"] {
+    width: 220px;
+}
+
+.header-bottom p {
+    font-size: 16px;
+    line-height: 23px;
+    font-style: italic;
+    color: #ee3643;
+    width: 198px;
+    float: left;
+    padding-left: 47px;
+}
+
+.header-bottom .contacts {
+    width: 300px;
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.header-bottom .user-block {
+    float: right;
+}
+
+.main-navigation {
+    width: 942px;
+    min-height: 61px;
+    margin: 0 auto;
+    margin-bottom: 64px;
+    background-color: bisque;
+}
+
+.main-navigation li {
+    display: inline-block;
+    padding-right: 53px;
+}
+
+.breadcrumbs li {
+    font-size: 13px;
+    line-height: 18px;
+    color: #000000;
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.breadcrumbs li a {
+    color: #000000;
+}
+
+.main-content .filter {
+    float: left;
+    width: 220px;
+}
+
+form {
+    margin-right: 21px;
+}
+
+form input[type="text"] {
+    display: inline-block;
+    width: 95px;
+}
+
+form input[type="checkbox"] {
+    text-align: left;
+    display: inline-block;
+    width: 95px;
+}
+
+form input[type="radio"] {
+    text-align: left;
+    display: inline-block;
+    width: 95px;
+}
+
+label {
+    margin-left: -20px;
+    width: 120px;
+}
+
+.promo .slider2 {
+    display: none;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.slider {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 55px;
+}
+
+.top-outer {
+    width: 940px;
+}
+
+.item-title1,.item-title2,.item-title3 {
+    float: left;
+    width: 300px;
+   
+}
+
+.item-title1,.item-title2 {
+     margin-right: 20px;
+}
+
+.item-title4,.item-title5 {
+    float: left;
+    width: 300px;
+}
+
+.item-title3, .item-title4,.item-title5 {
+    margin-bottom: 20px;
+} 
+
+.popular-products {
+    min-height: 89px;
+    margin-bottom: 21px;
+}
+
+.popular-products h2 {
+    float: left;
+}
+}
+.popular-products .all-popular {
+    float: right;
+}
+
+.all-popular {
+    float: right;
+}
+
+ h1.perforator {
+    font-size: 30px;
+    line-height: 30px;
+    color: #32425c;
+    background-color: #f2f6f8;
+    padding-top: 32px;
+    padding-bottom: 35px;
+    padding-left: 30px;
+}
+
+.sorting {
+    float: right;
+    width: 700px;
+    min-height: 39px;
+    margin-bottom: 20px;
+}
+
+.sorting h3 {
+    float: left;
+    padding-right: 140px;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.sorting li a {
+    font-size: 13px;
+    line-height: 18px;
+    float: left;
+    text-decoration: underline;
+    margin-right: 70px;
+}
+
+.gallery-product .product {
+    float: left;
+}
+
+.gallery-product-catalog {
+    width: 700px;
+    float: right;
+}
+
+.gallery-product-catalog .product {
+    width: 220px;
+    min-height: 318px;
+    margin-right: 20px;
+    float: left;
+}
+
+.gallery-product-catalog .product:nth-child(3n) {
+    margin-right: 0;
+}
+
+.product {
+    width: 220px;
+    min-height: 318px;
+    margin-right: 20px;
+}
+
+.product h3, .product span {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px    
+}
+
+h2.product-line {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 30px
+}
+
+.product span {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px
+}
+
+.product del {
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: bold;
+}
+
+.gallery-product .item-last {
+    float: right;
+    margin-right: 0;
+}
+
+.gallery-all-producer .producer {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 220px;
+    height: 145px;
+}
+
+.gallery-all-producer .producer img {
+    padding: 48px 0;
+}
+
+.gallery-all-producer .producer:nth-child(4n) {
+    margin-right: 0;
+}
+
+.popular-producer {
+    display: block;
+    min-height: 89px;
+    margin-bottom: 20px;
+}
+
+.popular-producer .all-producer {
+    float: right;
+    margin-top: -40px;
+}
+
+.services-delivery p {
+    margin-bottom: 75px;
+}
+
+.services h2 {
+    font-size: 30px;
+    line-height: 24px;
+}
+
+.services p {
+    font-size: 13px;
+    line-height: 24px;
+}
+
+ul.delivery-menu {
+    width: 240px;
+}
+
+.services-outer {
+    padding-top: 68px;
+    margin-top: 68px;
+}
+
+.services-outer h2 {
+    margin-top: 68px;
+}
+
+.services-outer {
+    background-color: #f2f6f8;
+}
+.services-slide-outer {
+    float: right;
+    width: 640px;
+}
+
+.services-slide-outer h2 {
+    font-size: 36px;
+    line-height: 24px;
+}
+
+.services-slide-outer p {
+    font-size: 13px;
+    line-height: 24px;
+    width: 300px;
+}
+
+.services-slide-outer .services-slide-1 {
+    background: url(../img/delivery-slide.png) no-repeat 170px 25px;
+    min-height: 281px;
+}
+
+.services-slider {
+    float: right;
+}
+
+.services-menu {
+    float: left;
+    width: 240px;
+    min-height: 184px;
+}
+
+.services-menu li {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.services-slide-1 p {
+    width: 300px;
+    float: left;
+}
+
+.services-slide-2 {
+    display: none;
+}
+
+.services-slide-3 {
+    display: none;
+}
+
+.services-delivery {
+    margin-bottom: 84px;
+}
+
+.company-info {
+    padding: 83px 106px;
+}
+
+.company-info .companies {
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.company-name {
+    float: left;
+    width: 561px;
+}
+
+.company-name h2 {
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.paginator a {
+    display: inline-block;  
+    width: 38px;
+    height: 38px;
+}
+
+.paginator a:last-of-type {  
+    width: 138px;
+    height: 38px;
+}
+
+.description {
+    background-color: #f2f6f8;
+}
+
+.description h2 {
+    font-size: 30px;
+    line-height: 24px;
+    padding-top: 69px;
+    padding-bottom: 40px;
+}
+
+.description p {
+    padding-bottom: 74px;
+}
+
+.top-footer {
+    margin-top: 85px;
+}
+
+.company-technomart ul {
+    float: left;
+    width: 220px;
+}
+
+.about-company {
+    display: inline-block;
+    width: 220px;
+}
+
+.contacts  {
+    width: 300px;
+    float: right;
+}
+
+.contacts img {
+    margin-bottom: 42px;
+}
+
+.top-footer-outer {
+    float: left;
+    width: 380px;
+}
+
+.top-footer .menu-outer {
+    float: right;
+    width: 560px;
+}
+
+.logo-footer {
+    width: 220px;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+footer .footer-contacts {
+    margin-right: 20px;
+}
+ 
+footer .first-menu-bottom {
+   padding-left: 10px;
+}   
+
+footer .first-menu-bottom li {
+    font-size: 18px;
+    line-height: 24px;
+    display: inline-block;
+    margin-right: 55px;
+}
+
+footer .first-menu-bottom li:last-of-type { 
+    margin-right: 0px;
+}
+
+footer .first-menu-bottom li a { 
+    text-decoration: none;
+}
+
+footer .second-menu-bottom li {
+    font-size: 18px;
+    line-height: 24px;
+    display: inline-block;
+    margin-right: 55px;
+}
+
+footer .second-menu-bottom li:last-of-type {
+    margin-right: 0px;
+}
+
+footer .second-menu-bottom li a { 
+    text-decoration: none;
+}
+
+footer .second-menu-bottom {
+    padding-left: 25px;
+}
+
+footer .footer-copyright {
+    width: 233px;
+}
+
+.bottom-footer {
+   padding-top: 40px;
+   min-height: 106px;
+   background-color: #293449;
+   color: #FFFFFF;
+}
+
+footer .footer-social {
+    float: left;
+    width: 134px;
+    margin-right: 100px;
+    
+}
+
+footer .footer-copyright {
+    font-size: 16px;
+    line-height: 18px;
+    float: left;
+    width: 230px;
+    margin-right: 150px;
+}
+
+footer .copyright-academy {
+    font-size: 16px;
+    line-height: 18px;
+    width: 110px;
+    float: right;
+}
+
+.bottom-footer .footer-contacts  {
+    font-size: 16px;
+    line-height: 18px;
+    float: left;
+    width: 140px;
+}
+  
