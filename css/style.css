@@ -2,9 +2,10 @@ body {
     margin: 0;
     padding: 0;
     font-family: "PTSans", "Cuprum", "Arial", sans-serif;
-    font-size: 16px;
-    font-weight: normal;
-    line-height: 20px;
+    min-width: 960px;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: normal;   
     color: #000000;
     
 }
@@ -72,6 +73,7 @@ a.checkout
     color: #ffffff;
     background-color: #ee3643;
     width: 220px;
+    text-transform: uppercase;
     margin-right: 20px;
     padding: 12px 0;
     text-align: center;
@@ -83,6 +85,17 @@ a.checkout
     top: 48px;
     left: 0;
     width: 100%;
+    border-bottom: 5px solid #b52933;
+}
+
+.logo-footer {
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    padding: 20px 0;
+    text-align: center;
+    background-color: #ee3643;
+    color: #ffffff;
     border-bottom: 5px solid #b52933;
 }
 
@@ -179,18 +192,67 @@ label {
 
 .slider {
     float: left;
+    position: relative;
     margin-right: 20px;
     margin-bottom: 55px;
+}
+
+.slider1 {
+   
+   
+}
+
+.slider1 h2 {
+    font-size: 36px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    margin-top: 26px;
+    
 }
 
 .top-outer {
     width: 940px;
 }
 
+.top-outer a.title {
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
+    display: block;
+    width: 135px;
+    margin-top: 13px;
+    padding-bottom: 35px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.top-outer h2 {
+    color: #ffffff;
+    margin-left: 21px;
+    margin-top: 30px;
+    margin-bottom: 18px;
+}
+
+.item-title1 a.title {
+    background-color: #dda028;
+    width: 135px;
+}
+
 .item-title1,.item-title2,.item-title3 {
     float: left;
     width: 300px;
-   
+}
+
+.item-title1 a,.item-title2 a,.item-title3 a {
+    margin-left: 24px;
+    margin-bottom: 23px;
+}
+
+.item-title1 {
+    background-color: #f6b22d;
 }
 
 .item-title1,.item-title2 {
@@ -234,7 +296,6 @@ label {
 }
 
 .sorting {
-    float: right;
     width: 700px;
     min-height: 39px;
     margin-bottom: 20px;
@@ -250,9 +311,16 @@ label {
 .sorting li a {
     font-size: 13px;
     line-height: 18px;
-    float: left;
     text-decoration: underline;
     margin-right: 70px;
+}
+
+.sorting li {
+    float: left;
+}
+
+.outer-right {
+    float: right;
 }
 
 .gallery-product .product {
@@ -261,14 +329,15 @@ label {
 
 .gallery-product-catalog {
     width: 700px;
-    float: right;
 }
 
 .gallery-product-catalog .product {
+    float: left;
     width: 220px;
     min-height: 318px;
     margin-right: 20px;
-    float: left;
+    margin-bottom: 20px;
+    
 }
 
 .gallery-product-catalog .product:nth-child(3n) {
@@ -281,10 +350,34 @@ label {
     margin-right: 20px;
 }
 
-.product h3, .product span {
+.product span {
     font-weight: bold;
     font-size: 18px;
-    line-height: 20px    
+    line-height: 20px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.product h3 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+/*
+.product img {
+    margin-left: 19px;
+    margin-right: 19px;
+    margin-top: 40px;
+    margin-bottom: 54px;
+}
+*/
+
+.product img:nth-child(1) {
+    margin-left: 17px;
+    margin-right: 19px;
 }
 
 h2.product-line {
@@ -293,16 +386,36 @@ h2.product-line {
     line-height: 30px
 }
 
-.product span {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 20px
-}
-
 .product del {
     font-size: 17px;
     line-height: 18px;
     font-weight: bold;
+    margin-left: 80px;
+    margin-right: 80px;
+    color: #999999;
+}
+
+.product a.price {
+    margin-left: 80px;
+    margin-right: 80px;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: bold;
+}
+
+.product a.bascket {
+    font-size: 14px;
+    line-height: 18px;
+    display: block;
+    text-align: center;    
+    padding-top: 43px;
+}
+
+.product a.mark {
+    font-size: 14px;
+    line-height: 18px;
+    display: block;
+    text-align: center;
 }
 
 .gallery-product .item-last {
@@ -324,6 +437,7 @@ h2.product-line {
 
 .gallery-all-producer .producer:nth-child(4n) {
     margin-right: 0;
+    padding-right: 0;
 }
 
 .popular-producer {
@@ -406,7 +520,6 @@ ul.delivery-menu {
 
 .services-slide-1 p {
     width: 300px;
-    float: left;
 }
 
 .services-slide-2 {
@@ -494,6 +607,11 @@ ul.delivery-menu {
     width: 380px;
 }
 
+.top-footer {
+    min-height: 193px;
+    background-color: #32425c;
+}
+
 .top-footer .menu-outer {
     float: right;
     width: 560px;
@@ -507,6 +625,9 @@ ul.delivery-menu {
 
 footer .footer-contacts {
     margin-right: 20px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #f1f5f7;
 }
  
 footer .first-menu-bottom {
