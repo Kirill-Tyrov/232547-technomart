@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum|PT+Sans:700&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link href="css/style.css" rel="stylesheet">
@@ -11,7 +11,7 @@
   <body>
  <!--Шапка сайта --header main-header -->
     <div class="header-top">
-      <div class="container">
+      <div class="container clearfix">
         <div class="logo">
           Техномарт
         </div>
@@ -112,12 +112,14 @@
           </div>
        </div>
       </div>
-    </div>    
-       <div class="popular-products container clearfix">
+    </div>
+    <div class="popular-products container">
+      <div class="clearfix">
         <h2>Популярные товары:</h2>
         <a class="all-popular" href="#">Все популярные товары</a>
-       </div>     
-    <!--Галерея  --gallery-product-->  
+      </div>
+    </div>
+    <!--Галерея  --gallery-product-->
     <div class="gallery-product">
       <div class="container clearfix">
         <div class="product item">
@@ -152,9 +154,11 @@
     </div>
       <!--Галерея end-->
     <div class="popular-producer container">
+      <div class="clearfix">
         <h2>Популярные производители:</h2>
         <a class="all-producer" href="#">Все производители</a>
-    </div>    
+      </div>
+    </div>
       <!--Галерея производители-->
     <div class="gallery-all-producer">
       <div class="container clearfix">
@@ -183,7 +187,7 @@
           <img src="img/metabo-logo.png" alt="">
         </div>
       </div>
-    </div>  
+    </div>
      <!--Галерея end-->
     <div class="services-outer">
       <div class="container clearfix">
@@ -198,7 +202,7 @@
           <li>Доставка</li>
           <li>Гарантия</li>
           <li>Кредит</li>
-        </ul>
+        </ul>   
         <div class="services-slide-outer">  
           <div class="services-slide services-slide-1">
             <h2>Доставка</h2>
@@ -213,14 +217,12 @@
                    Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
                    Дом уж восстановите как-нибудь сами.
             </p>
-            <img src="img/guarantees-slide.png" alt="">
           </div>
           <div class="services-slide services-slide-3">
             <h2>Кредит</h2>
             <p>
                    Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.
             </p>
-            <img src="img/credit-slide.png" alt="">
           </div>
         </div>
       </div>
@@ -233,8 +235,10 @@
                Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.
           </p>
           <p>
-            Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:
-          </p>
+            Мы можем доставить ваш товар в самые отдаленные точки России!
+          <br>
+            Техномарт работает со многими транспортными компаниями:
+          </p>  
           <ul class="companies">
             <li>Деловые линии</li>
             <li>Автотрейдинг</li>
@@ -308,10 +312,14 @@
             <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
           </section>
           <section class="footer-contacts">
-            <p>Обратная связь:<a class="btn" href="https://mail.htmlacademy.ru">mail@htmlacademy.ru</a></p>
+            <p>Обратная связь:</p>
+            <a class="btn" href="https://mail.htmlacademy.ru">mail@htmlacademy.ru
+            </a>
           </section>
           <section class="copyright-academy">
-            <p>Разработано—<a class="btn" href="https://htmlacademy.ru">HTML Academy</a></p>
+            <p>Разработано—</p>
+            <a class="btn" href="https://htmlacademy.ru">htmlacademy.ru
+            </a>
           </section>
         </div>
       </footer>
