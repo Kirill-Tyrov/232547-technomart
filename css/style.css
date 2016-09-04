@@ -90,7 +90,7 @@ a.checkout
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
-    padding: 20px 0;
+    padding: 17px 0;
     text-align: center;
     background-color: #ee3643;
     color: #ffffff;
@@ -674,7 +674,7 @@ h2.product-line {
     line-height: 18px;
     font-weight: bold;
     display: block;
-    text-align: center;
+    text-align: center; 
     color: #999999;
 }
 
@@ -873,23 +873,34 @@ ul.delivery-menu {
     border-top: 1px solid #405069;
 }
 
+.services-menu::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 9px;
+    height: 271px;
+    bottom: -45px;
+    left: 231px;
+    background: #f2f6f8 url(../img/shadow-slider.png) no-repeat;
+}
+
+.services-menu {
+    position: relative;
+    display: block;
+    float: left;
+    width: 241px;
+    min-height: 184px;
+}
+
 ul.services-menu {
     padding-left: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
 }
 
-.services-menu {
-    display: block;
-    float: left;
-    width: 240px;
-    min-height: 184px;
-}
-
 .services-outer {
     background-color: #f2f6f8;
     margin-bottom: 42px;
-    background: #f2f6f8 url(../img/shadow-slider.png) no-repeat 434px 75%;
 }
 
 .services-slide-1 p {
@@ -1056,7 +1067,7 @@ ul.services-menu {
 
 .contacts img {
     display: block;
-    margin-bottom: 42px;
+    margin-bottom: 40px;
 }
 
 .top-footer-outer {
@@ -1080,7 +1091,7 @@ ul.services-menu {
     font-family: "Cuprum", "Arial", sans-serif;
     width: 220px;
     text-align: center;
-    margin-bottom: 18px;
+    margin-bottom: 24px;
 }
 
 footer .footer-contacts {
@@ -1187,6 +1198,7 @@ footer .footer-copyright {
 .bottom-footer .footer-contacts  {
     float: left;
     width: 137px;
+    margin-left: 26px;
 }
 
 .bottom-footer .footer-contacts p {
