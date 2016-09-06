@@ -1234,6 +1234,10 @@ ul.delivery-menu {
     min-height: 281px
 }
 
+.services-slide {
+    min-height: 281px
+}
+
 .services-slider {
     float: right;
 }
