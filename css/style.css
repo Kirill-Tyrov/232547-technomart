@@ -1354,7 +1354,7 @@ ul.services-menu {
 
 .services-outer {
     background-color: #f2f6f8;
-    margin-bottom: 35px;
+    margin-bottom: 47px;
 }
 
 .services-slide-1 p {
@@ -1900,4 +1900,8 @@ button.btn-cross {
     height: 25px;
     border: 0px solid;
     background: url(../img/icon-cross.png) no-repeat;
+}
+
+.popup-hide {
+    display: none;
 }
