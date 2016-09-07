@@ -101,7 +101,7 @@ input[type="search"] {
     display: block;
     font-size: 17px;
     line-height: 18px;
-    box-sizing: border-box
+    box-sizing: border-box;
     font-family: "Cuprum", "Arial", sans-serif;
     width: 271px;
     padding-left: 47px;
@@ -1268,6 +1268,7 @@ ul.delivery-menu {
 .services-slide-outer {
     float: right;
     width: 640px;
+    height: 281px;
 }
 
 .services-slide-outer h2 {
@@ -1286,10 +1287,6 @@ ul.delivery-menu {
     font-weight: normal;
     width: 273px;
     margin-left: 16px;
-}
-
-.services-slide {
-    min-height: 281px
 }
 
 .services-slide {
