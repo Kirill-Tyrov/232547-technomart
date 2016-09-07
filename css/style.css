@@ -194,12 +194,12 @@ a.checkout {
     font-family: "Cuprum", "Arial", sans-serif;
     display: block;
     text-align: center;
-    width: 260px;
+    width: 252px;
     min-height: 30px;
     border: 2px solid #FFFFFF;
     color: #e9292a;
     padding-top: 14px;
-    padding-left: 5px;
+    padding-left: 16px;
     margin-top: 45px;
     margin-bottom: 2px;
     margin-left: 5px;
@@ -238,18 +238,21 @@ a.checkout {
     background-color: #ffffff;
     padding-top: 12px;
     padding-bottom: 12px;
+    padding-right: 10px;
+    margin-bottom: 10px;
     background-image: url(../img/icon-login.png), url(../img/icon-user.png);
     background-repeat: no-repeat;
-    background-position: 15px, 270px;
+    background-position: 22px, 280px;
 }
 
 ul.user-login {
     width: 300px;
     margin-top: 0;
     font-size: 16px;
-    line-height: 18px;
+    line-height: 17px;
     font-family: "Cuprum", "Arial", sans-serif;
     color: #32425c;
+    padding-left: 22px;
 }
 
 ul.user-login a {
@@ -278,14 +281,14 @@ ul.user-login li {
     font-family: "Cuprum", "Arial", sans-serif;
     color: black;
     background-color: #ffffff;
-    width: 118px;
+    width: 116px;
     display: block;
     text-align: center;
     padding-top: 14px;
     padding-bottom: 14px;
-    padding-left: 12px;
+    padding-left: 15px;
     margin-top: 40px;
-    margin-left: 10px;
+    margin-left: 12px;
     margin-right: 161px;
     background: #ffffff url(../img/icon-user.png) no-repeat 20px 11px;
 }
@@ -311,7 +314,7 @@ ul.user-login li {
     margin-top: 18px;
     background-color: #32425c;
     border-bottom: 5px solid #293449;
-    padding-left: 12px;
+    padding-left: 9px;
     box-sizing: border-box;
 }
 
@@ -328,7 +331,7 @@ ul.user-login li {
 .main-navigation ul {
     margin-top: 0;
     margin-bottom: 0;
-    padding-left: 21px;
+    padding-left: 15px;
     padding-right: 24px;
 }
 
@@ -337,7 +340,7 @@ ul.user-login li {
     font-size: 17px;
     line-height: 17px;
     font-family: "Cuprum", "Arial", sans-serif;
-    padding-right: 29px;
+    padding-right: 30px;
     padding-left: 30px;
 }
 
@@ -347,18 +350,19 @@ ul.breadcrumbs  {
 }
 
 .breadcrumbs li {
-    font-size: 13px;
-    line-height: 18px;
-    font-family: "PT Sans", "Arial", sans-serif;
     color: #000000;
     display: inline-block;
     margin-right: 20px;
 }
 
 .breadcrumbs li a {
+    font-size: 13px;
+    line-height: 18px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    text-transform: uppercase;
     color: #000000;
     background: url(../img/icon-arrow.png) no-repeat left;
-    padding-left: 23px;
+    padding-left: 24px;
 }
 
 .breadcrumbs {
@@ -379,12 +383,14 @@ span.filt {
     background-color: #f7f3ec;
 }
 
-h2.price {
+.filter h2.price {
     font-size: 17px;
     line-height: 30px;
+    text-transform: uppercase;
     font-weight: bold;
     font-family: "PT Sans", "Arial", sans-serif;
-    
+    margin-bottom: 14px;
+    margin-top: 10px;
 }
 
 .main-content .filter {
@@ -399,11 +405,15 @@ form {
 .line-search {
     display: block;
     margin: 0 auto;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
     width: 219px;
     height: 81px;
     border-radius: 2px;
     background: url(../img/range-input.png) no-repeat 0 0;
+}
+
+.price-block {
+    border-bottom: 1px solid #e5e5e5;
 }
 
 form input[type="text"] {
@@ -419,10 +429,33 @@ form input[type="text"] {
     margin-bottom: 24px;
 } 
 
+form input[type="text"].your-email, form input[type="text"].your-name  {
+    width: 210px;
+    text-align: left;
+    background-color: white;
+    border: 2px solid lightgrey;
+}
+
+form input[type="text"].your-email {
+    margin-top: 12px;
+}
+
+.form-write-us label {
+    font-weight: bold;
+    padding-bottom: 12px;
+}
+
+form input[type="text"].your-name {
+    margin-top: 12px;
+    margin-right: 18px;
+}
+
 input[type="checkbox"] {
     display: block;
     vertical-align: middle;
-    width: 20px;
+    width: 18px;
+    height: 18px;
+    margin-right: 12px;
 }
 
 .main-content.filter {
@@ -456,8 +489,7 @@ span.dash {
 input[type="checkbox"], label {
     display: inline-block;
     vertical-align: middle;
-    height: 20px;
-    margin-bottom: 18px;
+    margin-bottom: 19px;
 }
 
 form input[type="checkbox"].hitachi {
@@ -469,9 +501,10 @@ form input[type="radio"] {
     display: inline-block;
     vertical-align: baseline;
     margin-top: 0;
-    margin-right: 12px;
-    width: 20px;
-    height: 20px;
+    margin-right: 8px;
+    margin-left: 0;
+    width: 22px;
+    height: 22px;
 }
 
 form input[type="radio"], label {
@@ -479,16 +512,27 @@ form input[type="radio"], label {
     vertical-align: middle;
 }
 
-.product-line-check{
-    width: 110px;
+.product-line-check {
+    width: 115px;
+    padding-right: 0;
 }
 
 .product-line-check-energy {
-    width: 140px;
+    width: 170px;
 } 
 
-form label {
-    margin-left: 12px;
+form .product-line-check label {
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-family: "PT Sans", "Arial", sans-serif;
+}
+
+form .product-line-check-energy label { 
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-family: "PT Sans", "Arial", sans-serif;
 }
 
 button.btn {
@@ -501,7 +545,7 @@ button.btn {
     background-color: white;
     border: 1px solid lightgrey;
     border-radius: 2px;
-    margin-top: 74px;
+    margin-top: 60px;
 }
 
 .product-line-check-energy label {
@@ -672,8 +716,15 @@ button.btn {
     color: #ffffff;
     display: block;
     margin-left: 24px;
-    padding-bottom: px;
 } 
+
+.bottom-outer h2 {
+    font-size: 36px;
+    line-height: 30px;
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
 
 .item-title1 a.title {
     background-color: #dda028;
@@ -754,7 +805,11 @@ button.btn {
 }
 
 .item-title4 h2,.item-title5 h2 {
+    font-size: 24px;
+    line-height: 30px;
     font-family: "Cuprum", "Arial", sans-serif;
+    font-weight: bold;
+    text-transform: none;
 }
 
 .item-title3, .item-title4,.item-title5 {
@@ -763,7 +818,7 @@ button.btn {
 
 .popular-products {
     min-height: 89px;
-    margin-bottom: 20px;
+    margin-bottom: 19px;
     padding-left: 0;
     padding-right: 0;
     background-color: #f7f3ec;
@@ -782,6 +837,7 @@ button.btn {
 
 .gallery-product-catalog img, .gallery-product img {
     display: block;
+    margin: 0 auto;
 }
 
 .gallery-product-catalog h3, .gallery-product h3 {
@@ -797,7 +853,7 @@ button.btn {
 }
 
 .gallery-product-catalog {
-    margin-bottom: 36px;
+    margin-bottom: 30px;
 }
 
 .gallery-product .item {
@@ -816,8 +872,9 @@ button.btn {
     font-family: "Cuprum", "Arial", sans-serif;
     color: #FFFFFF;
     border-radius: 2px;
-    padding-top: 10px;
+    padding-top: 9px;
     padding-bottom: 10px;
+    padding-right: 2px;
     margin-right: 23px;
     margin-top: 25px;
 }
@@ -838,7 +895,7 @@ button.btn {
     width: 700px;
     min-height: 39px;
     background-color: #f7f3ec;
-    margin-bottom: 20px;
+    margin-bottom: 14px;
     background: #f7f3ec url(../img/icon-up-bottom.png) no-repeat 99%;
 }
 
@@ -853,7 +910,7 @@ button.btn {
     text-transform: uppercase;
     color: #000000;
     margin-bottom: 0;
-    margin-top: 6px;
+    margin-top: 4px;
 }
 
 .sorting .sort h3 {
@@ -868,7 +925,7 @@ button.btn {
     font-family: "PT Sans", "Arial", sans-serif;
     text-transform: uppercase;
     color: #b6b3ae;
-    padding-top: 10px;
+    padding-top: 8px;
     border-bottom: 1px dotted #ee3643;
     margin-right: 70px;
 }
@@ -927,7 +984,7 @@ button.btn {
     font-family: "PT Sans", "Arial", sans-serif;
     display: block;
     text-align: center;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 .gallery-product-catalog .product span {
@@ -940,15 +997,16 @@ button.btn {
     margin-bottom: 0;
 }
 
+h2.energy {
+    margin-bottom: 8px;
+}
+
 h2.product-line, h2.energy {
     font-weight: bold;
     font-size: 17px;
     line-height: 30px;
     font-family: "PT Sans", "Arial", sans-serif;
     text-transform: uppercase;
-    border-top: 1px solid #e5e5e5;
-    margin-top: 5px;
-    padding-top: 25px;
 }
 
 .gallery-product .product:nth-child(4) span {
@@ -980,7 +1038,7 @@ h2.product-line, h2.energy {
 
 .product .item-basckets .basckets, .product .item-basckets .mark  {
     display: block;
-    width: 135px;
+    width: 130px;
     margin: 0 auto;
     margin-bottom: 7px;
     padding-top: 7px;
@@ -1012,10 +1070,10 @@ h2.product-line, h2.energy {
     position: absolute;
     top: 0;
     left: 0;
-    padding: 40px 0;
+    padding: 45px 0;
     background-color: rgba(255,255,255,0.9);
     width: 218px;
-    height: 88px;
+    height: 80px;
     z-index: 10;
 }
 
@@ -1063,7 +1121,7 @@ h2.product-line, h2.energy {
 
 .product a.price {
     position: absolute;
-    bottom: 20px;
+    bottom: 22px;
 }
 
 .gallery-product-catalog .price, .gallery-product .price {
@@ -1073,7 +1131,7 @@ h2.product-line, h2.energy {
     border-radius: 2px;
     color: #ee3643;
     margin-left: 42px;
-    margin-top: 8px;
+    margin-top: 6px;
     background-color: #ee3643;
 }
 
@@ -1304,7 +1362,7 @@ ul.services-menu {
 }
 
 .services-slide-outer .services-slide-1 {
-    background: url(../img/delivery-slide.png) no-repeat 170px 25px;
+    background: url(../img/delivery-slide.png) no-repeat 170px 16px;
 }
 
 .services-slide-outer .services-slide-2 {
@@ -1371,17 +1429,20 @@ ul.services-menu {
     margin-top: 25px;
 }
 
+
 .paginator a {
     display: inline-block;
     font-size: 13px;
     line-height: 18px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    text-transform: uppercase;
     padding: 9px 0;
+    margin-right: 4px;
     width: 38px;
     border: 1px solid #e5e5e5;
     text-align: center;
     border-radius: 3px;
     color: #333333;
-    margin-bottom: 62px;
 }
 
 .paginator a:last-of-type {  
@@ -1403,13 +1464,13 @@ ul.services-menu {
     line-height: 24px;
     font-family: "Cuprum", "Arial", sans-serif;
     text-transform: uppercase;
+    margin-top: 60px;
     padding-top: 69px;
-    padding-bottom: 40px;
 }
 
 .description p {
-    padding-bottom: 74px;
-    margin-bottom: 0;
+    padding-bottom: 72px;
+    margin-bottom: 0px;
 }
 
 .top-footer-out {
@@ -1502,7 +1563,7 @@ ul.services-menu {
     font-family: "Cuprum", "Arial", sans-serif;
     width: 220px;
     text-align: center;
-    margin-bottom: 24px;
+    margin-bottom: 22px;
 }
 
 footer .footer-contacts {
@@ -1515,8 +1576,8 @@ footer .footer-contacts {
  
 footer .first-menu-bottom {
     padding-left: 10px;
-    padding-top: 28px;
-    margin-top: 0;
+    padding-top: 29px;
+    margin-top: 5px;
     float: right;
 }   
 
@@ -1557,7 +1618,7 @@ footer .second-menu-bottom li a {
 footer .second-menu-bottom {
     float: right;
     padding-left: 35px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 footer .footer-copyright {
@@ -1568,7 +1629,7 @@ footer .footer-copyright {
 }
 
 .bottom-footer {
-   padding-top: 40px;
+   padding-top: 35px;
    min-height: 106px;
    background-color: #293449;
    color: #FFFFFF;
@@ -1669,7 +1730,19 @@ button.btn-write-us {
     padding-bottom: 8px;
 }
 
+.form-write-us {
+    border-top: 6px solid #ee3643;
+    padding-top: 20px;
+    position: relative;
+    margin: 0 auto;
+    width: 620px;
+    min-height: 431px;
+}
+
 .form-write-us h2 {
+    position: absolute;
+    left: 82px;
+    top: 144px;
     display: block;
     width: 200px;
     font-size: 18px;
@@ -1683,13 +1756,18 @@ input[type="text"].form-write-us  {
 }
 
 .outer-write1 {
-    width: 160px;
-    float: left;
+    position: absolute;
+    top: 55px;
+    left: 82px;
+    width: 220px;
+    height: 100px;
 }
 
 .outer-write2 {
-    float: right;
-    width: 160px;
+    position: absolute;
+    top: 55px;
+    right: 82px;
+    width: 220px;
 }
 
 .outer-write2, .outer-write1 {
@@ -1700,24 +1778,126 @@ input[type="text"].form-write-us  {
 
 .your-name, .your-email {
     display: block;
-    width: 200px;
+    width: 215px;
     min-height: 36px;
-    padding-left: 15px;
+    padding-left: 5px;
     border: 1px solid lightgrey;
     border-radius: 3px;
 }
 
-
-
-input .your-name {
-    width: 200px;
+textarea {
+    position: absolute;
+    left: 82px;
+    top: 185px;
+    width: 455px;
+    margin-bottom: 38px;
 }
 
-textarea.text-letter {
-    width: 460px;
+.btn-outer {
+    position: absolute;
+    top: 319px;
+    min-height: 79px;
+    width: 620px;
+    padding-top: 35px;
+    background-color: #f1f1f1;
 }
 
-.wrapper {
-    width: 460px;
+.btn-outer .btn-write-us {
     margin: 0 auto;
+} 
+
+.cart {
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 624px;
+    border-top: 6px solid #ee3643;
+}
+
+.cart-outer-top {
+    padding-top: 73px;
+    padding-bottom: 71px;
+    padding-left: 90px;
+    background: url(../img/check-gr.png) no-repeat 17% 52%;
+}
+
+.cart-outer-top h2 {
+    text-align: center;
+    font-size: 30px;
+    line-height: 18px;
+    font-family: "Cuprum", "Arial", sans-serif;
+}
+
+.cart-outer-bottom {
+    min-height: 115px;
+    background-color: #f1f1f1;
+}
+
+.btn-outer-cart {
+    background-color: #ee3643;
+    border-radius: 2px;
+    color: #ffffff;
+    display: inline-block;
+    font-family: "Cuprum","Arial",sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-left: 80px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 220px;
+}
+
+.btn-outer-cart a {
+   color: #ffffff; 
+}
+
+.btn-outer-next a {
+    color: black;
+}
+
+.btn-outer-next {
+    background-color: white;
+    border-radius: 2px;
+    display: inline-block;
+    font-family: "Cuprum","Arial",sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 220px;
+}
+
+button.btn-cross {
+    position: absolute;
+    top: 9px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    border: 0px solid;
+    background: url(../img/icon-cross.png) no-repeat right;
+}
+
+.map-popup {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 940px;
+    height: 446px;
+    background: url(../img/map-popup.jpg) no-repeat center;
+}
+
+.map-popup button.btn-cross {
+    position: absolute;
+    top: 9px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    border: 0px solid;
+    background: url(../img/icon-cross.png) no-repeat;
 }
