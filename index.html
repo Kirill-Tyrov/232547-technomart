@@ -3,18 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700%7CPT+Sans:400,700&subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
  <!--Шапка сайта --header main-header -->
     <div class="header-top">
-      <div class="container">
+      <div class="container clearfix">
         <div class="logo">
           Техномарт
         </div>
-          <input type="text" class="search" placeholder="Поиск">
+          <input type="search" class="search" placeholder="Поиск:">
           <a class="bookmarks" href="#">Закладки: 0</a>
           <a class="bascket" href="#">Корзина: 0</a>
           <a class="checkout" href="#">Оформить заказ</a>
@@ -41,7 +40,7 @@
     <!--Основная навигация по сайту --main-navigation -->
         <nav class="main-navigation">
           <ul>
-            <li>  
+            <li>
               <a>Главная</a>
             </li>
             <li>
@@ -70,35 +69,42 @@
     <div class="promo">
       <div class="container">
         <div class="top-outer clearfix">
-          <div class="item-title1 img" alt="">
+          <div class="item-title1 img">
             <h2>Материалы</h2>
             <a class="title" href="#">На любой вкус</a>
             <div class="item-promo new"></div>
           </div>
-          <div class="item-title2 img" alt="">
+          <div class="item-title2 img">
             <h2>Инструмент</h2>
             <a class="title" href="#">На все случаи</a>
           </div>
-          <div class="item-title3 img" alt="">
+          <div class="item-title3 img">
             <h2>Техника</h2>
             <a class="title" href="#">Для стройки</a>
           </div>
         </div>
         <div class="bottom-outer clearfix">
     <!--Слайдер --slider-->
-          <div class="slider">
-            <div class="slider-controls"></div>
+          <div class="slider">       
             <div class="slider1">
               <img src="img/men-drill-slide.jpg" alt="">
-              <h2>Перфораторы</h2>
-              <span>Настоящие мужские игрушки</span>
-              <a class="open-catalog" href="#">Открыть каталог</a>
+                <h2>Перфораторы</h2>
+                <span>Настроящие мужские игрушки</span>
+                <a class="open-catalog" href="#">Открыть каталог</a>
             </div>
             <div class="slider2">
               <img src="img/men-drill-slide2.jpg" alt="">
               <h2>Дрели</h2>
               <span>Соседям на радость!</span>
               <a class="open-catalog" href="#">Открыть каталог</a>
+            </div>
+            <div class="slider-controls">
+              <button class="slider-btn btn-prev"></button>
+              <button class="slider-btn btn-next"></button>
+              <ul class="slider-nav">
+                <li class="slider-nav-btn slider-nav-current"></li>
+                <li class="slider-nav-btn"></li>
+              </ul>
             </div>
           </div>
           <div class="item-title4 img">
@@ -111,18 +117,22 @@
           </div>
        </div>
       </div>
-    </div>    
-    <div class="popular-products">
-      <div class="container clearfix">
+    </div>
+    <div class="popular-products container">
+      <div class="clearfix">
         <h2>Популярные товары:</h2>
         <a class="all-popular" href="#">Все популярные товары</a>
       </div>
-    </div>    
-    <!--Галерея  --gallery-product-->  
+    </div>
+    <!--Галерея  --gallery-product-->
     <div class="gallery-product">
-      <div class="container clearfix">  
+      <div class="container clearfix">
         <div class="product item">
           <img src="img/bfg-9000.jpg" alt="">
+            <div class="item-basckets">
+              <a class="basckets" href="#">Купить</a>
+              <a class="mark" href="#">В закладки</a>
+            </div>
           <h3>Перфоратор BOSCH</h3>
           <span>BFG 9000</span>
           <del>32500 Р.</del>
@@ -130,6 +140,10 @@
         </div>
         <div class="product item">
           <img src="img/bfg-3000.jpg" alt="">
+            <div class="item-basckets">
+              <a class="basckets" href="#">Купить</a>
+              <a class="mark" href="#">В закладки</a>
+            </div> 
           <h3>Перфоратор BOSCH</h3>
           <span>BFG 3000</span>
           <del>22500 Р.</del>
@@ -137,6 +151,10 @@
         </div>
         <div class="product item">
           <img src="img/bfg-6000.jpg" alt="">
+            <div class="item-basckets">
+              <a class="basckets" href="#">Купить</a>
+              <a class="mark" href="#">В закладки</a>
+            </div>
           <h3>Перфоратор BOSCH</h3>
           <span>BFG 6000</span>
           <del>30500 Р.</del>
@@ -145,6 +163,10 @@
         <div class="product item-last">
           <div class="item-promo new"></div>
           <img src="img/bfg-2000.jpg" alt="">
+            <div class="item-basckets">
+              <a class="basckets" href="#">Купить</a>
+              <a class="mark" href="#">В закладки</a>
+            </div>
           <h3>Перфоратор BOSCH</h3>
           <span>BFG 2000</span>
           <a class="price" href="#">12500 Р.</a>
@@ -152,15 +174,15 @@
       </div>
     </div>
       <!--Галерея end-->
-    <div class="popular-producer">
-      <div class="container clearfix">
+    <div class="popular-producer container">
+      <div class="clearfix">
         <h2>Популярные производители:</h2>
         <a class="all-producer" href="#">Все производители</a>
       </div>
-    </div>    
+    </div>
       <!--Галерея производители-->
     <div class="gallery-all-producer">
-      <div class="container clearfix">    
+      <div class="container clearfix">
         <div class="producer logo">
           <img src="img/bosch-logo.png" alt="">
         </div>
@@ -187,7 +209,6 @@
         </div>
       </div>
     </div>
-     <!--Галерея end-->
     <div class="services-outer">
       <div class="container clearfix">
         <div class="services">
@@ -202,11 +223,12 @@
           <li>Гарантия</li>
           <li>Кредит</li>
         </ul>
-        <div class="services-slide-outer">  
+        <div class="services-slide-outer">
           <div class="services-slide services-slide-1">
             <h2>Доставка</h2>
             <p>
-                   Мы с удовольствием доставим ваш товар прямок вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш на этаж!
+                   Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!<br>
+                   Ведь мы неплохо заработаем, поднимая его на ваш на этаж!
             </p>
           </div>
           <div class="services-slide services-slide-2">
@@ -215,14 +237,12 @@
                    Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
                    Дом уж восстановите как-нибудь сами.
             </p>
-            <img src="img/guarantees-slide.png">
           </div>
           <div class="services-slide services-slide-3">
             <h2>Кредит</h2>
             <p>
                    Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.
             </p>
-            <img src="img/credit-slide.png">
           </div>
         </div>
       </div>
@@ -235,8 +255,10 @@
                Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.
           </p>
           <p>
-            Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:
-          </p>
+            Мы можем доставить ваш товар в самые отдаленные точки России!
+          <br>
+            Техномарт работает со многими транспортными компаниями:
+          </p>  
           <ul class="companies">
             <li>Деловые линии</li>
             <li>Автотрейдинг</li>
@@ -250,12 +272,12 @@
               Вы можете забрать товар сами, <br>
               заехав в наш офис:
           </p>
-          <img src="img/map-image.jpg">
+          <img src="img/map-image.jpg" alt="">
           <a class="write-us" href="#">Заблудились? Напишите нам!</a>
         </div>
       </div>
     </div>  
-    <footer class="top-footer">
+    <footer class="top-footer-out">
       <div class="container clearfix">
         <div class="top-footer-outer">          
           <div class="logo-footer">Техномарт</div>
@@ -305,17 +327,57 @@
              © 2010–2016 Компания «Техномарт» Все права защищены
           </section>
           <section class="footer-social">
-            <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-            <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-            <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+            <a class="social-btn social-btn-vk" href="#"></a>
+            <a class="social-btn social-btn-fb" href="#"></a>
+            <a class="social-btn social-btn-inst" href="#"></a>
           </section>
           <section class="footer-contacts">
-            <p>Обратная связь:<a class="btn" href="https://mail.htmlacademy.ru">mail@htmlacademy.ru</a></p>
+            <p>Обратная связь:</p>
+            <a class="btn" href="https://mail.htmlacademy.ru">mail@htmlacademy.ru
+            </a>
           </section>
           <section class="copyright-academy">
-            <p>Разработано—<a class="btn" href="https://htmlacademy.ru">HTML Academy</a></p>
+            <p>Разработано—</p>
+            <a class="btn" href="https://htmlacademy.ru">htmlacademy.ru
+            </a>
           </section>
         </div>
       </footer>
+      <div class="form-write-us popup-hide">
+        <form class="write-us" action="#" method="post">
+          <div class="outer-write1">     
+            <label>Ваше имя:   
+              <input type="text" class="your-name" name="text" placeholder="Представьтесь, пожалуйста">
+            </label>
+          </div>
+          <div class="outer-write2">
+            <label> Ваш e-mail:
+            <input type="text" class="your-email" name="text" placeholder="Для отправки ответа">
+            </label>
+          </div>
+          <h2>Текст письма:</h2>
+          <textarea name="text-letter" rows="5" cols="62" placeholder="В свободной форме"></textarea>
+          <div class="btn-outer">
+            <button class="btn-write-us" type="submit"  >Отправить</button>
+          </div>
+        </form>
+      </div>
+      <div class="cart popup-hide">
+        <button class="btn-cross" type="button"></button>
+        <div class="cart-outer-top">
+          <h2>Товар добавлен в корзину!</h2>
+        </div>
+        <div class="cart-outer-bottom">
+          <div class="btn-outer-cart">
+            <a class="make-order" href="#"  >Оформить заказ</a>
+          </div>
+          <div class="btn-outer-next">
+            <a class="next-order" href="#"  >Продолжить покупки</a>
+          </div>
+        </div>
+      </div>
+      <div class="map-popup popup-hide">
+        <button class="btn-cross" type="button"></button>
+      </div>
   </body>
 </html>
